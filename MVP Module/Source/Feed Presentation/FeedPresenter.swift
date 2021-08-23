@@ -41,6 +41,6 @@ final class FeedPresenter {
 
 	func didFinishLoadingFeed(with error: Error) {
 		loadingView.display(FeedLoadingViewModel(isLoading: false))
-		errorView.display(FeedErrorViewModel(errorMessage: Localized.Feed.feedLoadingError))
+		errorView.display(FeedErrorViewModel(message: Localized.Feed.feedLoadingError))
 	}
 }
